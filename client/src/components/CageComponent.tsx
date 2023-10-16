@@ -32,7 +32,7 @@ function Cage({ setOpen, setOwner, setMice, setProtocol, HomeContext, cage }: Pr
             padding={15}
             borderWidth={1}
             margin={1}
-            backgroundColor={cage.mice && parseInt(cage.mice) > 0 ? '#FFCCCB' : '#90EE90'}
+            backgroundColor={cage.owner ? '#FFCCCB' : '#90EE90'}
             onPress={() => {
                 context['id'] = cage.id
                 context['owner'] = cage.owner;
